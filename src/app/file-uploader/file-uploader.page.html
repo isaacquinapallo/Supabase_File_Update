@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Carga de Archivos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <input type="file" (change)="uploadFile($event)" />
+
+  <div *ngIf="publicUrls.length > 0">
+    <h2>Archivos Subidos</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" size-md="3" *ngFor="let url of publicUrls">
+          <img [src]="url" alt="Archivo subido" style="width: 100%; border-radius: 10px;" />
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

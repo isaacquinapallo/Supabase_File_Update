@@ -1,0 +1,7 @@
+{
+  "name": "supabase-file-upload",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
